@@ -1,6 +1,12 @@
 # mecm_device_collections
 
-Automation to create device collections
+Automation to create device collections and manage membership rules:
+* Query Rules
+* Direct Membership
+* Include Collections
+* Exclude Collections
+
+**Note:** Query rules must match output from MECM exactly, else they will be deleted and re-created every execution.
 
 Example entry with all valid types:
 
