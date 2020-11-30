@@ -1,0 +1,14 @@
+---
+stages:
+  - deploy
+
+update device collections:
+  stage: deploy
+  script: 
+    - 'powershell.exe ${CI_PROJECT_DIR}\Create-DeviceCollections.ps1 -Folder $FOLDER_NAME -SiteCode $MECM_SITE'
+  only:
+    - master
+    - /^hotfix\/.*$/
+  tags:
+    - windows
+    - mecm
