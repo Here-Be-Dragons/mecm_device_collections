@@ -2,13 +2,22 @@
 
 ## Overview 
 
-Automation to create device collections and manage membership rules:
+The purpose of this script is to automate creation of device collections among multiple identical or similar sites.  Examples would include:
+
+* Multiple satellite offices
+* Restaurants
+* Ships
+
+This script will create device collections and manage membership rules, adding or removing as represented in the source files:
+
 * Query Rules
 * Direct Membership
 * Include Collections
 * Exclude Collections
 
 **Note:** Query rules must match output from MECM exactly, else they will be deleted and re-created every execution.
+
+Simply re-run the script with a different `$Folder` switch to create the full list in mutliple folders.
 
 ## Usage
 
